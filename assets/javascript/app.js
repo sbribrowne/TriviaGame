@@ -39,6 +39,18 @@ $(".incorrect").on("click", function incorrect() {
 	console.log(incorrectAnswers);
 })
 
+function totalResponses(answers) {
+	answers = correctAnswers+incorrectAnswers;
+	blankAnswers = 6-answers;
+
+};
+
+$("#blank").html("Left Blank: " + blankAnswers);
+
+
+
+
+
 $("#reload").on("click", function reload() {
 	document.location.reload();
 })
