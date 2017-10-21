@@ -13,6 +13,18 @@ label > input:checked + span{ /* (RADIO CHECKED) IMAGE STYLES */
 	float: right;
 }
 
+h1 {
+	text-align: center;
+}
+
+section {
+	width: 100%;
+}
+
+.begin {
+	margin-left: 47vw;
+}
+
 /*Modal css*/
 
 .modal {

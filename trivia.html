@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+  </head>
+
+  <body>
+  <h1>NBA Trivia</h1><br><br><br>
+
+  <div class="question" id="question-1">
+  <h3>What year was the National Basketball Association first established?</h3>
+  <label><input type="radio" name="Radio1" class="correct" /><span>1946</span></label><br>
+  <label><input type="radio" name="Radio1" class="incorrect" /><span>1954</span></label><br>
+  <label><input type="radio" name="Radio1" class="incorrect" /><span>1960</span></label>
+  </div>
+
+  <br>
+
+  <div class="question" id="question-2">
+  <h3>How many teams are in the NBA?</h3>
+  <label><input type="radio" name="Radio2" class="incorrect" /><span>40</span></label><br>
+  <label><input type="radio" name="Radio2" class="incorrect" /><span>36</span></label><br>
+  <label><input type="radio" name="Radio2" class="correct" /><span>30</span></label>
+  </div>
+
+  <br>
+
+  <div class="question" id="question-3">
+  <h3>Michael Jordan was drafted third overall. Which players were selected ahead of him?</h3>
+  <label><input type="radio" name="Radio3" class="incorrect" /><span>Charles Barkley & Hakeem Olajuwon</span></label><br>
+  <label><input type="radio" name="Radio3" class="incorrect" /><span>Sam Bowie & Charles Barkley</span></label><br>
+  <label><input type="radio" name="Radio3" class="correct" /><span>Hakeem Olajuwon & Sam Bowie</span></label>
+  </div>
+
+  <br>
+
+  <div class="question" id="question-4">
+  <h3>Which NBA player holds the record for scoring the most points in a game?</h3>
+  <label><input type="radio" name="Radio6" class="incorrect" /><span>Allen Iverson</span></label><br>
+  <label><input type="radio" name="Radio6" class="correct" /><span>Wilt Chamberlain</span></label><br>
+  <label><input type="radio" name="Radio6" class="incorrect" /><span>Kobe Bryant</span></label>
+  </div>
+
+  <br>
+
+  <div class="question" id="question-5">
+  <h3>What number did Michael Jordan wear when he came out of retirement at the end of the 1994-1995 season?</h3>
+  <label><input type="radio" name="Radio4" class="correct" /><span>45</span></label><br>
+  <label><input type="radio" name="Radio4" class="incorrect" /><span>23</span></label><br>
+  <label><input type="radio" name="Radio4" class="incorrect" /><span>42</span></label>
+  </div>
+
+  <br>
+
+  <div class="question" id="question-6">
+  <h3>Who's the best team in the NBA?</h3>
+  <label><input type="radio" name="Radio5" class="incorrect" /><span>Golden State Warriors</span></label><br>
+  <label><input type="radio" name="Radio5" class="correct" /><span>New York Knicks</span></label><br>
+  <label><input type="radio" name="Radio5" class="incorrect" /><span>Cleveland Caveliers</span></label>
+  </div>
+
+<br>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <h2>Time's Up!</h2>
+  <p id="correctresponses"></p>
+  <p id="incorrectresponses"></p>
+  <p id="blank"></p>
+  <button id="reload">Try Again</button>
+  </div>
+
+</div>
+
+<footer id="footer"><p id="timer"></p></footer>
+
+
+  </body>
+
+  </html>
