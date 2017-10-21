@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>NBA Trivia</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Pathway+Gothic+One" rel="stylesheet">
 
   </head>
 
@@ -70,15 +72,16 @@
 
 <br>
 
+<button class="submit">Submit</button>
+
 <!-- Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-  <h2>Time's Up!</h2>
-  <p id="correctresponses"></p>
-  <p id="incorrectresponses"></p>
-  <p id="blank"></p>
+  <p id="correctresponses">Correct Answers: 0</p>
+  <p id="incorrectresponses">Incorrect Answers: 0</p>
+  <p id="blank">Left Blank:</p>
   <button id="reload">Try Again</button>
   </div>
 

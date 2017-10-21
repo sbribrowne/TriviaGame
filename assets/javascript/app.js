@@ -1,9 +1,9 @@
-var time = 10
+var time = 60
 var timer;
 
 var correctAnswers = 0;
 var incorrectAnswers = 0;
-var blankAnswers = 0;
+var blankAnswers = 6;
 
 window.onload = function() {	
 
@@ -11,7 +11,7 @@ setTimeout(function(){
 
 	$('.modal').css("display","block");
 	
-}, 10 * 1000);
+}, 60 * 1000);
 
 
 timer = setInterval(timeCounter,1000);
@@ -29,26 +29,25 @@ function timeCounter(){
 
 $(".correct").on("click", function correct() {
 	correctAnswers++;
+	blankAnswers--;
 	$("#correctresponses").html("Correct Answers: " + correctAnswers);
+	$("#blank").html("Left Blank: " + blankAnswers);
 	console.log(correctAnswers);
 })
 
 $(".incorrect").on("click", function incorrect() {
 	incorrectAnswers++;
+	blankAnswers--;
 	$("#incorrectresponses").html("Incorrect Answers: " + incorrectAnswers);
+	$("#blank").html("Left Blank: " + blankAnswers);
 	console.log(incorrectAnswers);
 })
 
-function totalResponses(answers) {
-	answers = correctAnswers+incorrectAnswers;
-	blankAnswers = 6-answers;
+$(".submit").on("click", function correct() {
 
-};
+	$('.modal').css("display","block");
 
-$("#blank").html("Left Blank: " + blankAnswers);
-
-
-
+})
 
 
 $("#reload").on("click", function reload() {

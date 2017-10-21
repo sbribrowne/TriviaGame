@@ -1,3 +1,10 @@
+body {
+	background-image: url("../images/logos-nba.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
@@ -6,7 +13,8 @@ label > input + span{ /* IMAGE STYLES */
   cursor:pointer;
 }
 label > input:checked + span{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:5px solid black;
+  border:3px solid black;
+  width: 50vw;
 }
 
 #timer {
@@ -15,10 +23,21 @@ label > input:checked + span{ /* (RADIO CHECKED) IMAGE STYLES */
 
 h1 {
 	text-align: center;
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 60px;
+	padding-top: 10vh;
 }
 
 section {
 	width: 100%;
+}
+
+span {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.question {
+	width: 50vw;
 }
 
 .begin {
@@ -46,7 +65,7 @@ section {
     background-color: #fefefe;
     margin: auto;
     padding: 15px;
-    border: 5px solid #620637;
+    border: 3px solid white;
     border-radius: 0px;
     width: 55%;
 }
